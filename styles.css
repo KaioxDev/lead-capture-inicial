@@ -6,33 +6,40 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
-  }
-  
-  .container {
+}
+
+.container {
     text-align: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  input {
+    max-width: 400px;
+    /* Defina uma largura máxima para o contêiner */
     width: 100%;
+    /* Garante que o contêiner ocupe toda a largura disponível dentro da max-width */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+input {
+    width: calc(100% - 22px);
+    /* Ajuste a largura para deixar espaço para as bordas e padding */
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
-  
-  button {
+    box-sizing: border-box;
+    /* Isso garante que padding e border estão incluídos na largura definida */
+}
+
+button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -40,8 +47,8 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0056b3;
-  }
+}
